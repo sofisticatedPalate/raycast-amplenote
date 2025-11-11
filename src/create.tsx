@@ -9,6 +9,14 @@ type Values = {
   tokeneditor: string[];
 };
 
+/**
+ * Render a Raycast form demonstrating available form controls and a submit action.
+ *
+ * The form includes a text field, text area, date picker, checkbox, dropdown, and tag picker.
+ * Submitting the form logs the submitted values to the console and shows a toast titled "Submitted form".
+ *
+ * @returns A React element that renders the form UI
+ */
 export default function Command() {
   function handleSubmit(values: Values) {
     console.log(values);
